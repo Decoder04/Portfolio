@@ -31,7 +31,7 @@ if files:
         df=pd.read_csv(file)
         lst.append(df)
         
-    agent=create_pandas_dataframe_agent(model,lst,verbose=False)
+    agent=create_pandas_dataframe_agent(model,lst,verbose=False,allow_dangerous_code=True)
 
 if st.button("Clear uploaded files"):
     st.session_state["file_uploader_key"] += 1
