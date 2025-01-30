@@ -1,0 +1,10 @@
+#ipykernel
+python-dotenv
+langchain
+langchain-openai
+langchain-core
+langchain_community
+docx2txt
+pypdf
+langchain_chroma
+sentence_transformers

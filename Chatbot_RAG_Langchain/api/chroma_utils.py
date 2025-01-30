@@ -6,6 +6,16 @@ from typing import List
 from langchain_core.documents import Document
 import os
 
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="../.env", override=True)
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["LANGSMITH_TRACING"] = "true"
+os.environ["LANGSMITH_ENDPOINT"]="https://api.smith.langchain.com"
+os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
+os.environ["LANGSMITH_PROJECT"] = "chatbot-rag-2"
+
+
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, length_function=len)
 embedding_function = OpenAIEmbeddings()
 vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
