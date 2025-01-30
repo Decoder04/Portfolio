@@ -3,3 +3,32 @@ You can install "python-multipart" with:
 
 pip install python-multipart
 
+INFO:root:Session ID: None, User Query: hi, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 740ea7aa-8e3c-49f1-ad7c-2fbeaf338997, AI Response: Hello! How can I assist you today?
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 740ea7aa-8e3c-49f1-ad7c-2fbeaf338997, User Query: who is arun, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 740ea7aa-8e3c-49f1-ad7c-2fbeaf338997, AI Response: Arun Alo Chakraborty is a professional with over 8 years of experience in digital strategy and product management. He is a certified product manager with skills in data analytics, technical expertise, and leadership. He holds an MBA from the Asia School of Business in collaboration with MIT Sloan Management and a Bachelor of Technology in Electronics and Telecommunication Engineering from KIIT University. Arun is currently based in Kuala Lumpur, Malaysia, and has a background in digital initiatives, product management, and community involvement.
+INFO:root:Session ID: 740ea7aa-8e3c-49f1-ad7c-2fbeaf338997, User Query: does Arun has experience in machine learning?, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 740ea7aa-8e3c-49f1-ad7c-2fbeaf338997, AI Response: Yes, Arun has experience in machine learning. He worked on a corporate MBA project where he applied machine learning algorithms to Spotify data. Specifically, he designed an algorithm using R (a linear model) to predict the popularity of songs based on various parameters like genre, year of release, acousticness, and energy of the song.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:root:Session ID: 740ea7aa-8e3c-49f1-ad7c-2fbeaf338997, User Query: what is the core framework of logical thinking?, Model: gpt-4o
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Session ID: 740ea7aa-8e3c-49f1-ad7c-2fbeaf338997, AI Response: The core framework for logical thinking involves three main components:
+
+1. **Summarising (What's your point?)**: This involves distilling information to its essence, clearly defining the main point or message that needs to be conveyed. It requires identifying key ideas and expressing them in a concise manner.
+
+2. **Reasoning (Why?)**: This component is about providing justification or rationale behind an idea, argument, or decision. It involves explaining the logic and reasoning that support the main point, often through evidence, examples, or analysis.
+
+3. **Covering (Is that all?)**: This involves ensuring that all necessary aspects of a topic or argument have been considered and addressed. It requires comprehensive thinking to include all relevant information and anticipate potential questions or objections.
+
+These components work together to structure thoughts in a coherent manner, making arguments clear, justified, and thorough.
