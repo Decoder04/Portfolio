@@ -1,3 +1,4 @@
 .env
 venv/
 app.log
+Chatbot_RAG_Langchain/api/rag_app.db

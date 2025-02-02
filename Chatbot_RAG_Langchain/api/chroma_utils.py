@@ -1,4 +1,4 @@
-from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, UnstructuredHTMLLoader
+from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, UnstructuredPowerPointLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
@@ -16,7 +16,7 @@ os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
 os.environ["LANGSMITH_PROJECT"] = "chatbot-rag-2"
 
 
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, length_function=len)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100, length_function=len)
 embedding_function = OpenAIEmbeddings()
 vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
 
@@ -25,8 +25,8 @@ def load_and_split_document(file_path: str) -> List[Document]:
         loader = PyPDFLoader(file_path)
     elif file_path.endswith('.docx'):
         loader = Docx2txtLoader(file_path)
-    elif file_path.endswith('.html'):
-        loader = UnstructuredHTMLLoader(file_path)
+    elif file_path.endswith('.pptx'):
+        loader = UnstructuredPowerPointLoader(file_path)
     else:
         raise ValueError(f"Unsupported file type: {file_path}")
     
